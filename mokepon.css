@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Knewave&family=Luckiest+Guy&display=swap');
+
+body
+    {
+        background-image: url(./Img/fondo.jpg);
+        background-position: center;
+        background-size: cover;
+        margin: 13px;
+        background-attachment:fixed;
+    }
+
+#seleccionar-mascota
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 41px;
+        height: 417px;
+        width: 182px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+.titulo
+    {
+        display: contents;
+        color: black;
+        height: 130px;
+        width: 330px;
+        font-family: 'Fredoka One', cursive;
+        font-size: 77px;
+        margin-top: 9px;
+    }   
+
+.subtitulo
+    {
+        height: 40px;
+        width: 205px;
+        font-family: 'Luckiest Guy', cursive;
+    }
+
+.tarjetas
+    {
+        display: flex;
+        gap: 10px;
+    }    
+
+.tarjeta-charmander
+    {
+        width: 210px;
+        height: 75px;
+        background: #ff0000;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 3px solid black;
+        color: black;
+        font-family: 'Fredoka One', cursive;
+        border-radius: 20px;
+        display: flex;
+        gap: 10px;
+        font-size: 20px;
+        align-items: center;
+        justify-content: space-around;
+        align-content: space-around;
+    }    
+
+.tarjeta-bulbasaur
+    {
+        width: 210px;
+        height: 75px;
+        background: #40ff00;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 3px solid black;
+        color: black;
+        font-family: 'Fredoka One', cursive;
+        border-radius: 20px;
+        display: flex;
+        gap: 10px;
+        font-size: 20px;
+        align-items: center;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+
+.tarjeta-squirtle
+    {
+        width: 210px;
+        height: 75px;
+        background: #0026ff;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 3px solid black;
+        color: black;
+        font-family: 'Fredoka One', cursive;
+        border-radius: 20px;
+        display: flex;
+        gap: 10px;
+        font-size: 20px;
+        align-items: center;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+
+.tarjeta-charmander img
+    {
+        height: 58px;
+        width: 85px;
+    }
+
+.tarjeta-bulbasaur img
+    {
+        height: 58px;
+        width: 85px;  
+    }
+
+.tarjeta-squirtle img
+    {
+        height: 58px;
+        width: 85px;  
+    }
+
+#boton-mascota
+    {
+        width: 175px;
+        height: 51px;
+        background-color: black;
+        color: white;
+        border: 3px solid white;
+        box-sizing: border-box;
+        margin: 32px;
+        border-radius: 20px;
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 25px;
+
+    }
+
+input
+    {
+        display: none;
+    }
+
+input:checked + label
+    {
+        background-color: white;
+    }
+
+#seleccionar-ataque
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+.boton-fire
+    {
+        background-color: #00ffec;
+        color: black;
+        font-family: 'Fredoka One', cursive;
+        border-radius: 46px;
+        border: 3px solid black;
+        padding: 15px;
+        box-sizing: border-box;
+        width: 98px;
+    }
+
+.boton-water
+    {
+        background-color: #0026ff;
+        color: black;
+        font-family: 'Fredoka One', cursive;
+        border-radius: 20px;
+        border: 3px solid black;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+.boton-earth
+    {
+        background-color: #40ff00;
+        color: black;
+        font-family: 'Fredoka One', cursive;
+        border-radius: 20px;
+        border: 3px solid black;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+#resultado
+    {
+        font-family: 'Knewave', cursive;
+        display: flex;
+        font-size: 45px;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px;
+    }
+#boton-reiniciar
+    {
+        width: 200px;
+        height: 32px;
+        background-color: black;
+        color: white;
+        border: 3px solid white;
+        box-sizing: border-box;
+        border-radius: 20px;
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 25px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: -18px;
+    }
+
+.ataques
+    {
+        display: grid;
+        grid-template-columns: 100px 100px;
+        color: black;
+        font-family: 'Luckiest Guy', cursive;
+        box-sizing: border-box;
+        justify-items: end;
+    }
+
+#vidas-enemigo
+    {
+        width: 75px;
+        display: flex;
+        font-size: 50px;
+        margin: 45px 3px -23px 3px;
+        font-family: 'Luckiest Guy', cursive;
+        flex-direction: column;
+        align-items: center;
+    }
+
+#vidas-jugador
+    {
+        width: 75px;
+        font-size: 50px;
+        margin: -6px 3px -23px 3px;
+        font-family: 'Luckiest Guy', cursive;
+    }
+
+#mascota-jugador
+    {
+        width: 27px;
+        margin: 17px 0px 0px -25px;
+    }
+    
+.ataques-enemigo
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -50px;
+        justify-items: end;
+    }
+
+#ataque-del-jugador
+    {
+        width: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: -10px 0px 0px 8px;
+        justify-items: end;
+    }
+
+#ataque-del-enemigo
+    {
+        width: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: -27px 0px -200px -4px;
+    }
+
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa-botones{
+    width: 200px;
+    height: 32px;
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -18px;
+}
+
+@media (max-width: 360px)
+    {
+        .tarjetas
+            {
+                flex-direction: column;
+                gap: 10px;
+            }   
+    }
